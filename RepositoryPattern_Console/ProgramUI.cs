@@ -68,8 +68,12 @@ namespace RepositoryPattern_Console
                     break;
                 case "4":
                     //Update content description
+                    UpdateContentDescription();
+                    break;
                 case "5":
-                    //Remove content
+                    //Delete some content
+                    DeleteContent();
+                    break;
                 case "6":
                     //Exit
                     _isRunning = false;
@@ -220,6 +224,28 @@ namespace RepositoryPattern_Console
                         return MaturityRating.NC17;
                 }
             }
+        }
+
+        private void UpdateContentDescription()
+        {
+            Console.WriteLine("Enter title to be edited: ");
+            string title = Console.ReadLine();
+
+            Console.WriteLine("Enter new description.");
+            string description = Console.ReadLine();
+
+            _repo.UpdateStreamingContentDescription(title, description);
+
+            PressAnyKeyToReturnToMainMenu();
+        }
+
+        private void DeleteContent()
+        {
+            Console.WriteLine("Enter title to be deleted: ");
+
+            _repo.DeleteContentByTitle(Console.ReadLine());
+
+            PressAnyKeyToReturnToMainMenu();
         }
 
         public void PressAnyKeyToReturnToMainMenu()
