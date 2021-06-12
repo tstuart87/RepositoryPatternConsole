@@ -1,0 +1,10 @@
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPattern_Console\bin\Debug\RepositoryPattern_Console.exe.config
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPattern_Console\bin\Debug\RepositoryPattern_Console.exe
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPattern_Console\bin\Debug\RepositoryPattern_Console.pdb
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPattern_Console\bin\Debug\RepositoryPattern_Repository.dll
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPattern_Console\bin\Debug\RepositoryPattern_Repository.pdb
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPattern_Console\obj\Debug\RepositoryPattern_Console.csprojAssemblyReference.cache
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPattern_Console\obj\Debug\RepositoryPattern_Console.csproj.CoreCompileInputs.cache
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPattern_Console\obj\Debug\RepositoryPattern_Console.csproj.CopyComplete
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPattern_Console\obj\Debug\RepositoryPattern_Console.exe
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPattern_Console\obj\Debug\RepositoryPattern_Console.pdb
