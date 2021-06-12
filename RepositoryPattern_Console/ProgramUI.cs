@@ -60,8 +60,12 @@ namespace RepositoryPattern_Console
                     break;
                 case "2":
                     //Display content by title
+                    DisplayContentByTitle();
+                    break;
                 case "3":
                     //Add new content
+                    CreateNewContent();
+                    break;
                 case "4":
                     //Update content description
                 case "5":
@@ -84,17 +88,139 @@ namespace RepositoryPattern_Console
 
             foreach (StreamingContent content in listOfContent)
             {
-                Console.WriteLine($"Title: {content.Title}\n" +
-                                $"Description: {content.Description}\n" +
-                                $"Release Year: {content.ReleaseYear}\n" +
-                                $"Genre: {content.Genre}\n" +
-                                $"Stars: {content.StarRating}\n" +
-                                $"Maturity Rating: {content.AgeRating}\n");
+                DisplayContent(content);
             }
 
             PressAnyKeyToReturnToMainMenu();
         }
 
+        private void DisplayContentByTitle()
+        {
+            Console.Write("Enter a title: ");
+            string title = Console.ReadLine();
+
+            StreamingContent content = _repo.GetContentByTitle(title);
+
+            if (content != null)
+            {
+                DisplayContent(content);
+
+                PressAnyKeyToReturnToMainMenu();
+            }
+            else
+            {
+                Console.WriteLine("Invalid Selection. Press any key to return to main menu.");
+                GetMenuSelection();
+            }
+        }
+      
+        private void DisplayContent(StreamingContent content)
+        {
+            Console.WriteLine($"Title: {content.Title}\n" +
+                                $"Description: {content.Description}\n" +
+                                $"Release Year: {content.ReleaseYear}\n" +
+                                $"Genre: {content.Genre}\n" +
+                                $"Stars: {content.StarRating}\n" +
+                                $"Maturity Rating: {content.AgeRating}\n");
+        }
+
+        private void CreateNewContent()
+        {
+            Console.Clear();
+            Console.WriteLine("Enter a title: ");
+            string title = Console.ReadLine();
+
+            Console.WriteLine("Enter a description: ");
+            string description = Console.ReadLine();
+
+            Console.WriteLine("Enter the Release Year: ");
+            int releaseYear = int.Parse(Console.ReadLine());
+
+            GenreType genre = GetGenreType();
+
+            Console.WriteLine("Enter a Star Rating(0-10): ");
+            double starRating = double.Parse(Console.ReadLine());
+
+            MaturityRating ageRating = GetAgeRating();
+
+            StreamingContent content = new StreamingContent(title, description, ageRating, starRating, releaseYear, genre);
+
+            _repo.AddContentToDirectory(content);
+
+            PressAnyKeyToReturnToMainMenu();
+        }
+
+        private GenreType GetGenreType()
+        {
+            Console.WriteLine("Select a Genre:\n" +
+                            "1. Thriller\n" +
+                            "2. Scifi\n" +
+                            "3. Action\n" +
+                            "4. Drama\n" +
+                            "5. Horror\n" +
+                            "6. Mystery\n" +
+                            "7. Romance\n" +
+                            "8. RomCom\n" +
+                            "9. Comedy\n" +
+                            "10. Documentary\n" +
+                            "11. Western\n");
+
+            while (true)
+            {
+                switch (Console.ReadLine())
+                {
+                    case "1":
+                        return GenreType.Thriller;
+                    case "2":
+                        return GenreType.SciFi;
+                    case "3":
+                        return GenreType.Action;
+                    case "4":
+                        return GenreType.Drama;
+                    case "5":
+                        return GenreType.Horror;
+                    case "6":
+                        return GenreType.Mystery;
+                    case "7":
+                        return GenreType.Romance;
+                    case "8":
+                        return GenreType.RomCom;
+                    case "9":
+                        return GenreType.Comedy;
+                    case "10":
+                        return GenreType.Documentary;
+                    case "11":
+                        return GenreType.Western;
+                }
+            }
+        }
+
+        private MaturityRating GetAgeRating()
+        {
+            Console.WriteLine("Select a Maturity Rating:\n" +
+                            "1. G\n" +
+                            "2. PG\n" +
+                            "3. PG-13\n" +
+                            "4. R\n" +
+                            "5. NC17\n");
+
+            while (true)
+            {
+                switch (Console.ReadLine())
+                {
+                    case "1":
+                        return MaturityRating.G;
+                    case "2":
+                        return MaturityRating.PG;
+                    case "3":
+                        return MaturityRating.PG13;
+                    case "4":
+                        return MaturityRating.R;
+                    case "5":
+                        return MaturityRating.NC17;
+                }
+            }
+        }
 
         public void PressAnyKeyToReturnToMainMenu()
         {
