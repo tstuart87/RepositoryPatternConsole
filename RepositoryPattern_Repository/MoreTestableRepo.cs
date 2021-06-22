@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace RepositoryPattern_Repository
 {
-    public class StreamingContentRepository : IStreamingContentRepository
+    public class MoreTestableRepo : IStreamingContentRepository
     {
-        private readonly List<StreamingContent> _contentDirectory = new List<StreamingContent>();
+        public readonly List<StreamingContent> _contentDirectory = new List<StreamingContent>();
         //Build out our CRUD methods
 
         //CREATE
@@ -62,6 +62,5 @@ namespace RepositoryPattern_Repository
 
             return DeleteExistingContent(content);
         }
-
     }
 }

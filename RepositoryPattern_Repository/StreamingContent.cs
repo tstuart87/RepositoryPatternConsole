@@ -13,6 +13,11 @@ namespace RepositoryPattern_Repository
         //Empty Constructor
         public StreamingContent() { }
 
+        public StreamingContent(string title)
+        {
+            Title = title;
+        }
+
         //Full Constructor
         public StreamingContent(string title, string description, MaturityRating ageRating, double starRating, int releaseYear, GenreType genre)
         {

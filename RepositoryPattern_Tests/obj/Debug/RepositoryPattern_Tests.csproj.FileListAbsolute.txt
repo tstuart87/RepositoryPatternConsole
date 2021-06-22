@@ -1,0 +1,16 @@
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\RepositoryPattern_Tests.dll
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\RepositoryPattern_Tests.pdb
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\RepositoryPattern_Repository.dll
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\RepositoryPattern_Repository.pdb
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\obj\Debug\RepositoryPattern_Tests.csproj.AssemblyReference.cache
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\obj\Debug\RepositoryPattern_Tests.csproj.CoreCompileInputs.cache
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\obj\Debug\RepositoryPattern_Tests.csproj.CopyComplete
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\obj\Debug\RepositoryPattern_Tests.dll
+C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Tests\obj\Debug\RepositoryPattern_Tests.pdb
