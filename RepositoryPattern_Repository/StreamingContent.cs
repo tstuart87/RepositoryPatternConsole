@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace RepositoryPattern_Repository
 {
-
     //POCO Plain Old C# Object
     public class StreamingContent
     {
@@ -18,7 +17,6 @@ namespace RepositoryPattern_Repository
             Title = title;
         }
 
-        //Full Constructor
         public StreamingContent(string title, string description, MaturityRating ageRating, double starRating, int releaseYear, GenreType genre)
         {
             Title = title;
@@ -29,12 +27,25 @@ namespace RepositoryPattern_Repository
             Genre = genre;
         }
 
+        //FullConstructor
+        public StreamingContent(string title, string description, MaturityRating ageRating, double starRating, int releaseYear, GenreType genre, IEnumerable<int?> castMemberIds)
+        {
+            Title = title;
+            Description = description;
+            AgeRating = ageRating;
+            StarRating = starRating;
+            ReleaseYear = releaseYear;
+            Genre = genre;
+            CastMemberIds = castMemberIds;
+        }
+
         public string Title { get; set; }
         public string Description { get; set; }
         public MaturityRating AgeRating { get; set; }
         public double StarRating { get; set; }
         public int ReleaseYear { get; set; }
         public GenreType Genre { get; set; }
+        public IEnumerable<int?> CastMemberIds { get; set; }
     }
 
     public enum MaturityRating

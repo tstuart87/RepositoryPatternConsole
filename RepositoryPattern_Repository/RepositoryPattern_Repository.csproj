@@ -41,8 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActorRepository.cs" />
+    <Compile Include="IActorRepository.cs" />
     <Compile Include="IStreamingContentRepository.cs" />
     <Compile Include="MoreTestableRepo.cs" />
+    <Compile Include="People\Actor.cs" />
+    <Compile Include="People\Person.cs" />
     <Compile Include="StreamingContent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StreamingContentRepository.cs" />

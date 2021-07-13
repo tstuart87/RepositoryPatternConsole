@@ -10,3 +10,9 @@ C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Repositor
 C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Repository\obj\Debug\RepositoryPattern_Repository.csproj.CoreCompileInputs.cache
 C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Repository\obj\Debug\RepositoryPattern_Repository.dll
 C:\Users\nicho\Source\Repos\RepositoryPatternConsole\RepositoryPattern_Repository\obj\Debug\RepositoryPattern_Repository.pdb
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPatternConsole\RepositoryPattern_Repository\obj\Debug\RepositoryPattern_Repository.csprojAssemblyReference.cache
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPatternConsole\RepositoryPattern_Repository\obj\Debug\RepositoryPattern_Repository.csproj.CoreCompileInputs.cache
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPatternConsole\RepositoryPattern_Repository\obj\Debug\RepositoryPattern_Repository.dll
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPatternConsole\RepositoryPattern_Repository\obj\Debug\RepositoryPattern_Repository.pdb
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPatternConsole\RepositoryPattern_Repository\bin\Debug\RepositoryPattern_Repository.dll
+C:\Users\stuar\OneDrive\Desktop\EFA\Lecture Projects\RepositoryPattern_Console\RepositoryPatternConsole\RepositoryPattern_Repository\bin\Debug\RepositoryPattern_Repository.pdb
