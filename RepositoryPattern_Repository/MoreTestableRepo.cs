@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryPattern_Repository
 {
-    public class MoreTestableRepo : IStreamingContentRepository
+    public class MoreTestableRepo //: IStreamingContentRepository
     {
         public readonly List<StreamingContent> _contentDirectory = new List<StreamingContent>();
         //Build out our CRUD methods
@@ -16,6 +16,8 @@ namespace RepositoryPattern_Repository
         {
             _contentDirectory.Add(content);
         }
+
+
 
 
         //READ

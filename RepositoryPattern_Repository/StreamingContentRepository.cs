@@ -9,14 +9,23 @@ namespace RepositoryPattern_Repository
     public class StreamingContentRepository : IStreamingContentRepository
     {
         private readonly List<StreamingContent> _contentDirectory = new List<StreamingContent>();
+
         //Build out our CRUD methods
 
         //CREATE
-        public void AddContentToDirectory(StreamingContent content)
+        public bool AddContentToDirectory(StreamingContent content)
         {
-            _contentDirectory.Add(content);
-        }
+            int contentDirectoryCount = _contentDirectory.Count();
 
+            _contentDirectory.Add(content);
+
+            if (_contentDirectory.Count() == contentDirectoryCount + 1)
+            {
+                return true;
+            }
+
+            return false;
+        }
 
         //READ
         //Get all our Streaming Content objects from our directory
@@ -63,5 +72,24 @@ namespace RepositoryPattern_Repository
             return DeleteExistingContent(content);
         }
 
+        public List<StreamingContent> GetContentByTitleSearch(string title)
+        {
+            List<StreamingContent> listOfContent = new List<StreamingContent>();
+
+            foreach (var content in _contentDirectory)
+            {
+                if (content.Title.ToLower().Contains(title.ToLower()))
+                {
+                    listOfContent.Add(content);
+                }
+            }
+
+            if (listOfContent.Count() == 0)
+            {
+                return null;
+            }
+
+            return listOfContent;
+        }
     }
 }

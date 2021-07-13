@@ -4,11 +4,12 @@ namespace RepositoryPattern_Repository
 {
     public interface IStreamingContentRepository
     {
-        void AddContentToDirectory(StreamingContent content);
+        bool AddContentToDirectory(StreamingContent content);
         bool DeleteContentByTitle(string title);
         bool DeleteExistingContent(StreamingContent content);
         List<StreamingContent> GetAllStreamingContent();
         StreamingContent GetContentByTitle(string title);
         void UpdateStreamingContentDescription(string title, string description);
+        List<StreamingContent> GetContentByTitleSearch(string title);
     }
 }
